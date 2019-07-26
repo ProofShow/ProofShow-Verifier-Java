@@ -1,9 +1,9 @@
-## ProofShow Verifier
+## ProofShow Verifier Java
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Known Vulnerabilities](https://snyk.io//test/github/ProofShow/ProofShow-Verifier-Java/badge.svg?targetFile=ProofShowVerifier/pom.xml)](https://snyk.io//test/github/ProofShow/ProofShow-Verifier-Java?targetFile=ProofShowVerifier/pom.xml)
 [![Build Status](https://travis-ci.com/ProofShow/ProofShow-Verifier-Java.svg?branch=master)](https://travis-ci.com/ProofShow/ProofShow-Verifier-Java)
 
-ProofShow Verifier is a Java library for verifying a signed PDF. The verification is done by
+ProofShow Verifier Java is a Java library for verifying a signed PDF. The verification is done by
 
 - Using [Digital Signature Service](https://github.com/esig/dss) to check if the input PDF is signed in PAdES Baseline LTA format
 
