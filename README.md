@@ -3,7 +3,7 @@
 [![Known Vulnerabilities](https://snyk.io//test/github/ProofShow/ProofShow-Verifier-Java/badge.svg?targetFile=ProofShowVerifier/pom.xml)](https://snyk.io//test/github/ProofShow/ProofShow-Verifier-Java?targetFile=ProofShowVerifier/pom.xml)
 [![Build Status](https://travis-ci.com/ProofShow/ProofShow-Verifier-Java.svg?branch=master)](https://travis-ci.com/ProofShow/ProofShow-Verifier-Java)
 
-ProofShow Verifier (Java) is a library for verifying a ProofShow return receipt that is digitally-signed. Specifically, it will
+ProofShow Verifier (Java) is a library for verifying a ProofShow return receipt that is digitally signed. Specifically, it will
 
 - Use EU's [Digital Signature Service](https://github.com/esig/dss) library to check if the digital signature meets EU's PAdES B-LTA standard;
 - Output the signer's certificate for later check using [PCCA Verifier (Java)](https://github.com/ProofShow/PCCA-Verifier-Java).
