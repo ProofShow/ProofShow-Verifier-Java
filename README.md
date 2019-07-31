@@ -13,12 +13,13 @@ ProofShow Verifier (Java) is a library for courier companies to verify a ProofSh
 ### Requirement
 - JDK 1.8 or higher
 - Maven
+- [PCCA Verifier (Java)](https://github.com/ProofShow/PCCA-Verifier-Java)
 
 ### How to install
 To install this library in the local repository, run the following:
 
 ```
-mvn install -pl ProofShowVerifier
+mvn install -pl '!ProofShowVerifierExample'
 ```
 
 ### How to use
@@ -28,6 +29,58 @@ To use this library, study the sample code in `ProofShowVerifierExample` which c
 mvn package
 java -jar ProofShowVerifierExample/target/ProofShowVerifierExample.jar INPUT_PATH COURIER_ID TRACKING_NUMBER
 ```
+
+The definitions of `COURIER_ID`:
+<table>
+    <tr>
+        <td>USPS</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>UPS</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>FedEx</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>DHL</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>新竹物流</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>嘉里大榮物流</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>黑貓宅急便</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>宅配通</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>網家速配</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>EMS</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>中華郵政</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>顺丰速运</td>
+        <td>11</td>
+    </tr>
+</table>
 
 ### License
 AGPL-3.0-or-later
