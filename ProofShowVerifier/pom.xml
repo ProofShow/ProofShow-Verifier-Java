@@ -37,6 +37,11 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>show.proof.pcca</groupId>
+			<artifactId>PCCAVerifier</artifactId>
+			<version>1.0.72618</version>
+		</dependency>
+		<dependency>
 			<groupId>eu.europa.ec.joinup.sd-dss</groupId>
 			<artifactId>dss-document</artifactId>
 			<version>5.3.1</version>

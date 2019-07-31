@@ -7,6 +7,7 @@ package show.proof.verifier.lib;
 public enum ProofShowErrors {
     SUCCESS,
     INVALID_SIGNATURE_NUM,
+    INVALID_ORIGINAL_PDF,
     INVALID_SIGNATURE_FORMAT,
     INVALID_SIGNATURE_INDICATION,
     UNKNOW

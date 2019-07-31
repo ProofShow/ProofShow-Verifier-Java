@@ -7,7 +7,8 @@ import show.proof.verifier.lib.ProofShowPDFVerifier;
 import show.proof.verifier.lib.ProofShowVerifierReport;
 
 /**
- * Provides the interface for verifying a signed PDF in PAdES Baseline LTA format.
+ * Provides the interface for verifying a signed PDF in PAdES Baseline LTA
+ * format.
  *
  */
 public class ProofShowVerifier {
@@ -19,11 +20,13 @@ public class ProofShowVerifier {
     /**
      * Constructor for ProofShowVerifier.
      * 
-     * @param pdfBuffer the signed PDF buffer.
+     * @param pdfBuffer   the signed PDF buffer.
+     * @param courierID   the courier's ID
+     * @param trackingNum the tracking number of receipt
      * @throws InvalidParameterException
      */
-    public ProofShowVerifier(byte[] pdfBuffer) throws InvalidParameterException {
-        pdfVerifier = new ProofShowPDFVerifier(pdfBuffer);
+    public ProofShowVerifier(byte[] pdfBuffer, String courierID, String trackingNum) throws InvalidParameterException {
+        pdfVerifier = new ProofShowPDFVerifier(pdfBuffer, courierID, trackingNum);
     }
 
     /**
@@ -35,8 +38,10 @@ public class ProofShowVerifier {
         ProofShowVerifierReport report = new ProofShowVerifierReport();
         report.retCode = pdfVerifier.verify();
 
-        if (report.retCode == ProofShowErrors.SUCCESS)
-            report.signerCert = pdfVerifier.getCertificate();
+        if (report.retCode == ProofShowErrors.SUCCESS) {
+            report.signerInfo = pdfVerifier.getSignerInfo();
+            report.signingTime = pdfVerifier.getSigningTime();
+        }
 
         return report;
     }
