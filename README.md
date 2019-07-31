@@ -30,7 +30,7 @@ mvn package
 java -jar ProofShowVerifierExample/target/ProofShowVerifierExample.jar INPUT_PATH COURIER_ID TRACKING_NUMBER
 ```
 
-The definitions of `COURIER_ID`:
+Below is the list of `COURIER_ID` that ProofShow Verifier (Java) currently supports:
 <table>
     <tr>
         <td>USPS</td>
