@@ -1,3 +1,6 @@
 language: java
 jdk:
   - openjdk8
+before_install:
+  - git clone https://github.com/ProofShow/PCCA-Verifier-Java.git
+  - mvn -f PCCA-Verifier-Java/pom.xml install -pl '!PCCAVerifierExample'
