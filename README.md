@@ -27,7 +27,7 @@ To use this library, study the sample code in `ProofShowVerifierExample` which c
 
 ```
 mvn package
-java -jar ProofShowVerifierExample/target/ProofShowVerifierExample.jar INPUT_PATH COURIER_ID TRACKING_NUMBER
+java -jar ProofShowVerifierExample/target/ProofShowVerifierExample.jar INPUT_PDF_PATH COURIER_ID TRACKING_NUMBER
 ```
 
 Below is the list of `COURIER_ID` that ProofShow Verifier (Java) currently supports:
