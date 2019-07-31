@@ -6,7 +6,7 @@
 
 	<groupId>show.proof</groupId>
 	<artifactId>verifier-project</artifactId>
-	<version>1.0.72612</version>
+	<version>1.0.73119</version>
 	<packaging>pom</packaging>
 
 	<name>verifier-project</name>
