@@ -16,7 +16,7 @@ ProofShow Verifier (Java) is a library for courier companies to verify a ProofSh
 - [PCCA Verifier (Java)](https://github.com/ProofShow/PCCA-Verifier-Java)
 
 ### How to install
-To install this library in the local repository, run the following:
+To install this library (without building the sample code) in the local repository, run the following:
 
 ```
 mvn install -pl '!ProofShowVerifierExample'
